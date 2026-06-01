@@ -22,7 +22,7 @@
             background: #8B7355;
         }
 
-        /* Фонові формули (навколо книжки) */
+        /* Фонові формули */
         .physics-bg {
             position: fixed;
             top: 0;
@@ -43,7 +43,7 @@
             padding: 20px;
         }
 
-        /* Книжка-обкладинка - ПОРТРЕТНА (вужча) */
+        /* Книжка-обкладинка */
         .book-cover {
             position: relative;
             width: 100%;
@@ -184,43 +184,46 @@
             letter-spacing: 1px;
         }
 
-        /* Декоративні елементи книжки (кути) */
+        /* ============================================ */
+        /* КУТИ - ЯСКРАВІ ЗОЛОТИСТІ ТА ЗСУНУТІ ВПРАВО */
+        /* ============================================ */
         .corner {
             position: absolute;
-            width: 40px;
-            height: 40px;
-            border-color: rgba(212,175,55,0.25);
+            width: 50px;
+            height: 50px;
+            border-color: #d4af37;
             border-style: solid;
             border-width: 0;
-            opacity: 0.3;
+            opacity: 0.8;
+            z-index: 5;
         }
 
         .corner-tl {
-            top: 15px;
-            left: 15px;
-            border-top-width: 2px;
-            border-left-width: 2px;
+            top: 20px;
+            left: 35px;
+            border-top-width: 3px;
+            border-left-width: 3px;
         }
 
         .corner-tr {
-            top: 15px;
-            right: 15px;
-            border-top-width: 2px;
-            border-right-width: 2px;
+            top: 20px;
+            right: 20px;
+            border-top-width: 3px;
+            border-right-width: 3px;
         }
 
         .corner-bl {
-            bottom: 15px;
-            left: 15px;
-            border-bottom-width: 2px;
-            border-left-width: 2px;
+            bottom: 20px;
+            left: 35px;
+            border-bottom-width: 3px;
+            border-left-width: 3px;
         }
 
         .corner-br {
-            bottom: 15px;
-            right: 15px;
-            border-bottom-width: 2px;
-            border-right-width: 2px;
+            bottom: 20px;
+            right: 20px;
+            border-bottom-width: 3px;
+            border-right-width: 3px;
         }
 
         /* Стрілка праворуч */
@@ -366,26 +369,27 @@
                 font-size: 0.95rem;
             }
             
+            /* Кути на мобільному - трохи менші */
             .corner {
-                width: 30px;
-                height: 30px;
-                opacity: 0.2;
-            }
-            
-            .corner-tl, .corner-tr {
-                top: 10px;
+                width: 35px;
+                height: 35px;
+                opacity: 0.7;
             }
             
             .corner-tl, .corner-bl {
-                left: 10px;
+                left: 28px;
             }
             
-            .corner-tr, .corner-br {
-                right: 10px;
+            .corner-tl, .corner-tr {
+                top: 12px;
             }
             
             .corner-bl, .corner-br {
-                bottom: 10px;
+                bottom: 12px;
+            }
+            
+            .corner-tr, .corner-br {
+                right: 12px;
             }
             
             .next-arrow {
@@ -424,15 +428,19 @@
                 font-size: 2.8rem;
             }
             
+            .corner {
+                width: 28px;
+                height: 28px;
+            }
+            
+            .corner-tl, .corner-bl {
+                left: 22px;
+            }
+            
             .triangle {
                 border-left-width: 22px;
                 border-top-width: 14px;
                 border-bottom-width: 14px;
-            }
-            
-            .corner {
-                width: 25px;
-                height: 25px;
             }
         }
     </style>
